@@ -7,7 +7,7 @@ RUN useradd -ms /bin/bash sandboxuser
 WORKDIR /home/sandboxuser
 
 # Copiar el archivo main.py desde la carpeta correcta
-COPY ./container/main.py ./main.py
+COPY ./Container/main.py ./main.py
 
 # Dar permisos de ejecución
 RUN chmod +x main.py
